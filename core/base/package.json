@@ -1,0 +1,8 @@
+{
+  "name": "pegbox",
+  "version": "1.0.1",
+  "main": "src/index.js",
+  "author": "Pan Alexey <pan-alexey@live.com>",
+  "license": "MIT",
+  "description": ""
+}

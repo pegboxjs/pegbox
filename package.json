@@ -1,0 +1,16 @@
+{
+  "name": "pegbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": ["core/*"],
+  "scripts": {
+    "publish": "npm run publish --workspaces core/base",
+    "build:core": "npm run build --workspace core/config",
+    "build": "npm run build --workspaces packages/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pan Alexey <pan-alexey@live.com>",
+  "license": "MIT",
+  "description": ""
+}
