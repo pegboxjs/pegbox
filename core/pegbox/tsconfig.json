@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "outDir": "./dist",
+      "allowSyntheticDefaultImports": true,
+      "target": "esnext",
+      "strict": true,
+      "removeComments": true,
+      "moduleResolution": "node",
+      "types": ["node"],
+    }
+  }

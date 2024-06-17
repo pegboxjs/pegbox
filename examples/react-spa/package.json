@@ -1,0 +1,20 @@
+{
+  "name": "examples-react-ssr",
+  "version": "1.0.1",
+  "private": true,
+  "author": "Pan Alexey <pan-alexey@live.com>",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "dev": "pagebox",
+    "tsc": "tsc --project tsconfig.json",
+    "ts": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "pegbox": "^1.0.0"
+  }
+}

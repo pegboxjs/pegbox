@@ -1,0 +1,25 @@
+{
+  "name": "pegbox",
+  "bin": {
+    "pagebox": "dist/bin.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "version": "1.0.1",
+  "author": "Pan Alexey <pan-alexey@live.com>",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "build": "npm run bin && npm run index && npm run chmod",
+    "bin": "tsc src/bin.ts --outDir dist",
+    "index": "tsc src/index.ts --outDir dist --declaration",
+    "chmod": "chmod +x ./dist/index.js"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}

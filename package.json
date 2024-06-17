@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
-  "workspaces": ["core/*"],
+  "workspaces": ["core/*", "examples/*"],
   "scripts": {
     "publish": "npm run publish --workspaces core/base",
     "build:core": "npm run build --workspace core/config",

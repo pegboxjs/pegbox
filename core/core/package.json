@@ -1,0 +1,19 @@
+{
+  "name": "@pegbox/core",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "version": "1.0.0",
+  "author": "Pan Alexey <pan-alexey@live.com>",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "build": "tsc src/index.ts --outDir dist --declaration",
+    "chmod": "chmod +x myscript"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
