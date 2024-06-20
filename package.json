@@ -3,14 +3,26 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
-  "workspaces": ["core/*", "examples/*"],
+  "workspaces": [
+    "packages/*",
+    "plugins/*",
+    "examples/*"
+  ],
   "scripts": {
-    "publish": "npm run publish --workspaces core/base",
-    "build:core": "npm run build --workspace core/config",
-    "build": "npm run build --workspaces packages/**",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:core && npm run build:packages",
+    "⛩️": "------- core -------",
+    "build:core": "npm run build:@pegbox/core && npm run build:pegbox",
+    "build:pegbox": "npm --workspace=pegbox run build",
+    "build:@pegbox/core": "npm --workspace=@pegbox/core run build",
+    "📦": "------- packages -------",
+    "build:packages": "npm --workspace=plugins run build "
   },
   "author": "Pan Alexey <pan-alexey@live.com>",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
 }

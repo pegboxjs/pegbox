@@ -1,19 +1,21 @@
 {
-  "name": "examples-react-spa",
+  "name": "@pegbox/core",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "version": "1.0.1",
-  "private": true,
   "author": "Pan Alexey <pan-alexey@live.com>",
   "license": "MIT",
   "description": "",
   "scripts": {
-    "dev": "pegbox --watch 123 555 --build 321",
-    "build": "pegbox --build",
-    "tsc": "tsc --project tsconfig.json"
+    "build": "tsc src/index.ts --outDir dist --declaration"
   },
   "dependencies": {
     "typescript": "^5.4.5"
   },
   "devDependencies": {
-    "pegbox": "^1.0.0"
+    "@types/node": "^20.14.6"
   }
 }

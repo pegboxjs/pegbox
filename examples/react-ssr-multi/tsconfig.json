@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "allowJs": true,
+      "checkJs": true,
+      "strict": true,
+      "noImplicitReturns": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "strictPropertyInitialization": true,
+      "outDir": "lib",
+    },
+    "files": [
+      "pegbox.conf.ts"
+    ]
+  }

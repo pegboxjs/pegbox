@@ -1,0 +1,13 @@
+{
+  "name": "@pegboxjs/plugin-react-multi-ssr",
+  "version": "1.0.1",
+  "author": "Pan Alexey <pan-alexey@live.com>",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "build": "echo @pegboxjs/plugin-react-ssr"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
